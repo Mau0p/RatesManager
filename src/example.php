@@ -5,18 +5,20 @@ include_once("lib/RatesManager.php");
 
 /*
  *
- *  Example updating your table of
- *  currency rates
+ *  Example getting currency rates from a base source.
  *
  */
 
 $object = new RatesManager();
 
 $object->setCurrencyBase('USD');
-$test = $object->getCurrencyRates();
+$response = $object->getCurrencyRates();
 
+foreach ($response->rates as $currency => $rate)
+{
+    echo "1 USD = " . $rate. " " . $currency . "\n";
+}
 
-var_dump($test);
 
 
 
