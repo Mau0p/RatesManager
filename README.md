@@ -1,4 +1,4 @@
 # RatesManager
 
-Helper for fixer.io API
+Simple helper for Fixer.io API.
 
