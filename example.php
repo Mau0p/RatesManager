@@ -1,7 +1,6 @@
 <?php
 
-include_once("lib/RatesManager.php");
-
+include_once("src/RatesManager.php");
 
 /*
  *
